@@ -8,7 +8,7 @@ import logging
 import tinytuya
 import time
 
-from miio.vacuum import Vacuum
+from miio.integrations.vacuum.roborock.vacuum import Vacuum
 from miio.exceptions import DeviceError, DeviceException, RecoverableError
 
 from typing import Any, Dict, List
