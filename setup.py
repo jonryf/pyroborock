@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name='pyroborock',
-    version='1.1.3',
+    version='1.1.4',
     packages=['pyroborock'],
     install_requires=['tinytuya==v1.2.3', 'python-miio==0.5.11', 'pycryptodome==3.14.1'],
     description='Communicate with roborock over tuya protocol',
