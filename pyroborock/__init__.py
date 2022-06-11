@@ -8,7 +8,7 @@ import logging
 import tinytuya
 import time
 
-from miio.integrations.vacuum.roborock.vacuum import Vacuum
+from miio.integrations.vacuum.roborock.vacuum import RoborockVacuum
 from miio.exceptions import DeviceError, DeviceException, RecoverableError
 
 from typing import Any, Dict, List
@@ -138,7 +138,7 @@ class TuyaProtocol:
     def close(self):
         self.tuya_node_wrapper.disconnect()
 
-class Roborock(Vacuum):
+class Roborock(RoborockVacuum):
     """Main class representing the vacuum."""
 
     def __init__(
